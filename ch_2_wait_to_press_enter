@@ -1,0 +1,17 @@
+#!/bin/bash
+
+##############################################
+#Purpos : shell script that prints out your name and waits for the user to press the [Enter] key before the script ends
+#Version: 1.0
+#Owner	: Aditya P <adityapatel081993@gmail.com>
+#Input	: press enter when the message ends
+#Output	: date, active users, hostname
+###############################################
+
+# use echo -e to enable the escape characters
+
+echo -e "\nHello $USER\n"
+echo -e "Todays date is : `/usr/bin/date`\n"	
+echo -e "Host name is : ${HOSTNAME}\n" 	# \n is for new line
+echo -e "Active menbers on the system is/are :";w 	# in place of w, 'who' can be also used
+read -p "Press [Enter] key to continue..." fakeEnterKey
