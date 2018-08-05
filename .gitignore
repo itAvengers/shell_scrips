@@ -1,2 +1,4 @@
 # ignore the template.sh file as it do not contain any code
 template.sh
+test.sh
+test2.sh
